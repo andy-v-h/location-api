@@ -7,6 +7,7 @@ import (
 	"entgo.io/ent/schema/field"
 	"entgo.io/ent/schema/index"
 	"github.com/vektah/gqlparser/v2/ast"
+	"go.infratographer.com/load-balancer-api/x/pubsubinfo"
 	"go.infratographer.com/x/entx"
 	"go.infratographer.com/x/gidx"
 )
@@ -62,17 +63,18 @@ func (Location) Edges() []ent.Edge {
 
 func (Location) Annotations() []schema.Annotation {
 	return []schema.Annotation{
-		entgql.RelayConnection(),
-		entx.GraphKeyDirective("id"),
-		prefixIDDirective(LocationPrefix),
-		entx.EventsHookSubjectName("location"),
-		entgql.RelayConnection(),
-		schema.Comment("Representation of a location."),
 		entgql.Implements("MetadataNode"),
 		entgql.Mutations(
 			entgql.MutationCreate().Description("Input information to create a location."),
 			entgql.MutationUpdate().Description("Input information to update a location."),
 		),
+		entgql.RelayConnection(),
+		entgql.RelayConnection(),
+		entx.EventsHookSubjectName("location"),
+		entx.GraphKeyDirective("id"),
+		prefixIDDirective(LocationPrefix),
+		pubsubinfo.Annotation{},
+		schema.Comment("Representation of a location."),
 	}
 }
 

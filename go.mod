@@ -14,6 +14,7 @@ require (
 	github.com/spf13/viper v1.15.0
 	github.com/vektah/gqlparser/v2 v2.5.2-0.20230422221642-25e09f9d292d
 	github.com/wundergraph/graphql-go-tools v1.63.0
+	go.infratographer.com/load-balancer-api v0.0.17
 	go.infratographer.com/x v0.1.2
 	go.uber.org/zap v1.24.0
 )
@@ -35,14 +36,13 @@ require (
 	github.com/go-logr/logr v1.2.3 // indirect
 	github.com/go-logr/stdr v1.2.2 // indirect
 	github.com/go-openapi/inflect v0.19.0 // indirect
-	github.com/gofrs/uuid v4.3.0+incompatible // indirect
 	github.com/golang-jwt/jwt v3.2.2+incompatible // indirect
 	github.com/golang-jwt/jwt/v5 v5.0.0 // indirect
 	github.com/golang/protobuf v1.5.3 // indirect
 	github.com/google/go-cmp v0.5.9 // indirect
 	github.com/google/uuid v1.3.0 // indirect
 	github.com/gorilla/websocket v1.5.0 // indirect
-	github.com/grpc-ecosystem/grpc-gateway/v2 v2.14.0 // indirect
+	github.com/grpc-ecosystem/grpc-gateway/v2 v2.15.0 // indirect
 	github.com/hashicorp/errwrap v1.1.0 // indirect
 	github.com/hashicorp/golang-lru/v2 v2.0.1 // indirect
 	github.com/hashicorp/hcl v1.0.0 // indirect
@@ -58,7 +58,6 @@ require (
 	github.com/jackc/pgx/v4 v4.18.1 // indirect
 	github.com/jaevor/go-nanoid v1.3.0 // indirect
 	github.com/json-iterator/go v1.1.12 // indirect
-	github.com/kylelemons/godebug v1.1.0 // indirect
 	github.com/labstack/echo-contrib v0.14.1 // indirect
 	github.com/labstack/echo-jwt/v4 v4.2.0 // indirect
 	github.com/labstack/gommon v0.4.0 // indirect
