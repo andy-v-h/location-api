@@ -8,9 +8,10 @@ import (
 	"context"
 
 	"entgo.io/contrib/entgql"
+	"go.infratographer.com/x/gidx"
+
 	"go.infratographer.com/location-api/internal/ent/generated"
 	"go.infratographer.com/location-api/internal/ent/generated/location"
-	"go.infratographer.com/x/gidx"
 )
 
 // Owner is the resolver for the owner field.
